@@ -12,6 +12,7 @@
         <module>jmeter-with-basic-report</module>
         <module>jmeter-plugins</module>
         <module>jmeter-16gbheap</module>
+        <module>jmeter-3.5gb-min</module>
     </modules>
 
 
