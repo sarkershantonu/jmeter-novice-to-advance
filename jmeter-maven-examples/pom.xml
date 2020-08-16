@@ -13,6 +13,7 @@
         <module>jmeter-plugins</module>
         <module>jmeter-16gbheap</module>
         <module>jmeter-3.5gb-min</module>
+        <module>jmeter-with-user-properties</module>
     </modules>
 
 
