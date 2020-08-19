@@ -15,6 +15,7 @@
         <module>jmeter-3.5gb-min</module>
         <module>jmeter-with-user-properties</module>
         <module>jmeter-with-maven-properties</module>
+        <module>jmeter-under-proxy</module>
     </modules>
 
 
