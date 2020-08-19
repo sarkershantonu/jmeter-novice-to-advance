@@ -16,6 +16,7 @@
         <module>jmeter-with-user-properties</module>
         <module>jmeter-with-maven-properties</module>
         <module>jmeter-under-proxy</module>
+        <module>jmeter-remote-load-generator-server</module>
     </modules>
 
 
