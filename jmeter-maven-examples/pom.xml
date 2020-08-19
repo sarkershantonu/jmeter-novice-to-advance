@@ -17,6 +17,7 @@
         <module>jmeter-with-maven-properties</module>
         <module>jmeter-under-proxy</module>
         <module>jmeter-remote-load-generator-server</module>
+        <module>jmeter-with-3rd-party-libs</module>
     </modules>
 
 
