@@ -31,6 +31,26 @@
             <groupId>com.lazerycode.jmeter</groupId>
             <artifactId>jmeter-maven-plugin</artifactId>
             <version>${jmeter.plugin.version}</version>
+            <executions>
+                <execution>
+                    <id>configuration</id>
+                    <goals>
+                        <goal>configure</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>tests</id>
+                    <goals>
+                        <goal>jmeter</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>check-results</id>
+                    <goals>
+                        <goal>results</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
     </plugins></build>
 </project>
