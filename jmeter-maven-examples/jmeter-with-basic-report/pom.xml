@@ -13,6 +13,8 @@
         <jobs.url>jobs.bdjobs.com</jobs.url>
         <protocol>https</protocol>
         <port>443</port>
+        <connect.timeout>30000</connect.timeout>
+        <response.timeout>40000</response.timeout>
         <thread.name>BDJOBS</thread.name>
         <thread.number>20</thread.number>
         <rampup>10</rampup>
@@ -51,6 +53,22 @@
                     </goals>
                 </execution>
             </executions>
+            <configuration>
+                <propertiesUser>
+                    <base.url>${base.url}</base.url>
+                    <jobs.url>${jobs.url}</jobs.url>
+                    <app.protocol>${protocol}</app.protocol>
+                    <app.port>${port}</app.port>
+                    <connect.timeout>${connect.timeout}</connect.timeout>
+                    <response.timeout>${response.timeout}</response.timeout>
+                    <thread.name>${thread.name}</thread.name>
+                    <thread.number>${thread.number}</thread.number>
+                    <rampup>${rampup}</rampup>
+                    <startup.delay>${startup.delay}</startup.delay>
+                    <test.duration>${test.duration}</test.duration>
+                    <target.rpm>${target.rpm}</target.rpm>
+                </propertiesUser>
+            </configuration>
         </plugin>
     </plugins></build>
 </project>
