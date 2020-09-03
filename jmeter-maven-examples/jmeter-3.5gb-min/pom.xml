@@ -68,6 +68,13 @@
                     <test.duration>${test.duration}</test.duration>
                     <target.rpm>${target.rpm}</target.rpm>
                 </propertiesUser>
+                <jMeterProcessJVMSettings>
+                    <xms>3584</xms>
+                    <xmx>3584</xmx>
+                    <arguments>
+                        <argument>-XX:MaxMetaspaceSize=768m</argument>
+                    </arguments>
+                </jMeterProcessJVMSettings>
             </configuration>
         </plugin>
     </plugins></build>
