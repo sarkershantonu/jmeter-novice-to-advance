@@ -26,7 +26,7 @@
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
-
+        <fail.allowed.max.percentage>5</fail.allowed.max.percentage>
     </properties>
     <build><plugins>
         <plugin>
@@ -54,6 +54,9 @@
                 </execution>
             </executions>
             <configuration>
+                <jmeterExtensions>
+                    <artifact>kg.apc:jmeter-plugins-casutg:2.9</artifact>
+                </jmeterExtensions>
                 <propertiesUser>
                     <base.url>${base.url}</base.url>
                     <jobs.url>${jobs.url}</jobs.url>
@@ -68,6 +71,7 @@
                     <test.duration>${test.duration}</test.duration>
                     <target.rpm>${target.rpm}</target.rpm>
                 </propertiesUser>
+                <errorRateThresholdInPercent>${fail.allowed.max.percentage}</errorRateThresholdInPercent>
             </configuration>
         </plugin>
     </plugins></build>
