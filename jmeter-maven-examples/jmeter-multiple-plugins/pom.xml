@@ -57,11 +57,10 @@
                 <jmeterExtensions>
                     <artifact>kg.apc:jmeter-plugins-standard:1.4.0</artifact>
                     <artifact>kg.apc:jmeter-plugins-extras:1.4.0</artifact>
-                    <artifact>kg.apc:jmeter-plugins-extras-libs:1.4.0</artifact>
-                    <artifact>kg.apc:jmeter-plugins-cmd:2.2</artifact>
                     <artifact>kg.apc:jmeter-plugins-graphs-basic:2.0</artifact>
                     <artifact>kg.apc:jmeter-plugins-graphs-additional:2.0</artifact>
                 </jmeterExtensions>
+
                 <propertiesUser>
                     <base.url>${base.url}</base.url>
                     <jobs.url>${jobs.url}</jobs.url>
