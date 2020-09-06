@@ -19,14 +19,14 @@
         <thread.number>20</thread.number>
         <rampup>10</rampup>
         <startup.delay>5</startup.delay>
-        <test.duration>600</test.duration>
+        <test.duration>100</test.duration>
         <target.rpm>30</target.rpm>
         <jmeter.plugin.version>3.1.0</jmeter.plugin.version>
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
-
+        <html.report>true</html.report>
     </properties>
     <build><plugins>
         <plugin>
@@ -68,6 +68,10 @@
                     <test.duration>${test.duration}</test.duration>
                     <target.rpm>${target.rpm}</target.rpm>
                 </propertiesUser>
+                <resultsFileFormat>xml</resultsFileFormat>
+                <ignoreResultFailures>true</ignoreResultFailures>
+                <generateReports>${html.report}</generateReports>
+
             </configuration>
         </plugin>
     </plugins></build>
