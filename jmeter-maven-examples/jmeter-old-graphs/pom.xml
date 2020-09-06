@@ -19,14 +19,15 @@
         <thread.number>20</thread.number>
         <rampup>10</rampup>
         <startup.delay>5</startup.delay>
-        <test.duration>600</test.duration>
+        <test.duration>100</test.duration>
         <target.rpm>30</target.rpm>
         <jmeter.plugin.version>3.1.0</jmeter.plugin.version>
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
-
+        <graph.width>1024</graph.width>
+        <graph.height>768</graph.height>
     </properties>
     <build><plugins>
         <plugin>
@@ -72,5 +73,82 @@
                 <ignoreResultFailures>true</ignoreResultFailures>
             </configuration>
         </plugin>
-    </plugins></build>
+        <plugin>
+            <groupId>de.codecentric</groupId>
+            <artifactId>jmeter-graph-maven-plugin</artifactId>
+            <version>0.1.0</version>
+            <configuration>
+                <inputFile>${project.build.directory}/jmeter/results/*.jtl</inputFile>
+                <graphs>
+                    <graph>
+                        <pluginType>ThreadsStateOverTime</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/ThreadsStateOverTime.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>BytesThroughputOverTime</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/BytesThroughputOverTime.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>HitsPerSecond</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/HitsPerSecond.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>LatenciesOverTime</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/LatenciesOverTime.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>ResponseCodesPerSecond</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/ResponseCodesPerSecond.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>ResponseTimesDistribution</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/ResponseTimesDistribution.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>ResponseTimesOverTime</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/ResponseTimesOverTime.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>ResponseTimesPercentiles</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/ResponseTimesPercentiles.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>ThroughputVsThreads</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/ThroughputVsThreads.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>TimesVsThreads</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/TimesVsThreads.png</outputFile>
+                    </graph>
+                    <graph>
+                        <pluginType>TransactionsPerSecond</pluginType>
+                        <width>${graph.width}</width>
+                        <height>${graph.height}</height>
+                        <outputFile>${project.build.directory}/jmeter/results/graphs/TransactionsPerSecond.png</outputFile>
+                    </graph>
+                </graphs>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 </project>
