@@ -73,14 +73,9 @@
                     <exclusion>com.sun.jmx:jmxri</exclusion>
                     <exclusion>org.apache.tika:tika-core</exclusion>
                     <exclusion>org.apache.tika:tika-parsers</exclusion>
-                    <exclusion>com.mongodb:mongo-java-driver</exclusion>
                     <exclusion>org.neo4j.driver:neo4j-java-driver</exclusion>
-
                     <exclusion>com.helger:ph-commons</exclusion>
-                    <exclusion>com.helger.css:ph-css</exclusion>
-                    <exclusion>org.xmlpull:xpp3_min</exclusion>
-                    <!--<exclusion>com.thoughtworks.xstream:xstream</exclusion>-->
-
+                    <exclusion>com.helger:ph-css</exclusion>
                     <exclusion>commons-pool2:commons-pool2</exclusion>
                     <exclusion>commons-math3:commons-math3</exclusion>
                     <exclusion>org.slf4j:slf4j-nop</exclusion>
@@ -90,7 +85,6 @@
                     <exclusion>log4j:log4j</exclusion>
                     <exclusion>commons-logging:commons-logging</exclusion>
                     <exclusion>excalibur-logger:excalibur-logger</exclusion>
-
                 </excludedArtifacts>
             </configuration>
         </plugin>

@@ -68,6 +68,9 @@
                     <test.duration>${test.duration}</test.duration>
                     <target.rpm>${target.rpm}</target.rpm>
                 </propertiesUser>
+                <testPlanLibraries>
+                    <artifact>org.apache.activemq:activemq-all:5.16.0</artifact>
+                </testPlanLibraries>
             </configuration>
         </plugin>
     </plugins></build>
