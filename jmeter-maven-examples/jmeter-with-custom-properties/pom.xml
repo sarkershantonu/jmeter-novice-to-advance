@@ -9,20 +9,11 @@
 
     <properties>
         <BUILD_TAG>${project.version}</BUILD_TAG>
-        <connect.timeout>30000</connect.timeout>
-        <response.timeout>40000</response.timeout>
-        <thread.name>BDJOBS</thread.name>
-        <thread.number>20</thread.number>
-        <rampup>10</rampup>
-        <startup.delay>5</startup.delay>
-        <test.duration>600</test.duration>
-        <target.rpm>30</target.rpm>
         <jmeter.plugin.version>3.1.0</jmeter.plugin.version>
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
-
     </properties>
     <build><plugins>
         <plugin>
@@ -50,20 +41,9 @@
                 </execution>
             </executions>
             <configuration>
-                <propertiesUser>
-                    <base.url>www.bdjobs.com</base.url>
-                    <jobs.url>jobs.bdjobs.com</jobs.url>
-                    <app.protocol>https</app.protocol>
-                    <app.port>443</app.port>
-                    <connect.timeout>30000</connect.timeout>
-                    <response.timeout>40000</response.timeout>
-                    <thread.name>BDJOBS</thread.name>
-                    <thread.number>20</thread.number>
-                    <rampup>10</rampup>
-                    <startup.delay>5</startup.delay>
-                    <test.duration>600</test.duration>
-                    <target.rpm>10</target.rpm>
-                </propertiesUser>
+                <customPropertiesFiles>
+                    <file>./src/test/conf/stage/server.properties</file>
+                </customPropertiesFiles>
             </configuration>
         </plugin>
     </plugins></build>
