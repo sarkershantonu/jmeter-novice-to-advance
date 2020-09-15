@@ -1,4 +1,4 @@
-# Jmeter Basic
+# Jmeter mini jar package
 
-# [Blog](https://sarkershantonu.github.io/2020/08/28/maven-jmeter/)
+# [Blog](https://sarkershantonu.github.io/2020/09/06/maven-jmeter-modify-jars/)
 
