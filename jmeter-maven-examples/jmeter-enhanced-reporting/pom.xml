@@ -67,6 +67,9 @@
                     <startup.delay>${startup.delay}</startup.delay>
                     <test.duration>${test.duration}</test.duration>
                     <target.rpm>${target.rpm}</target.rpm>
+                    <jmeter.reportgenerator.report_title>Shantonu Example</jmeter.reportgenerator.report_title>
+                    <jmeter.reportgenerator.overall_granularity>500</jmeter.reportgenerator.overall_granularity>
+                    <jmeter.reportgenerator.exporter.html.series_filter>^(-success|-failure)?$</jmeter.reportgenerator.exporter.html.series_filter>
                 </propertiesUser>
                 <resultsFileFormat>xml</resultsFileFormat>
                 <ignoreResultFailures>true</ignoreResultFailures>
