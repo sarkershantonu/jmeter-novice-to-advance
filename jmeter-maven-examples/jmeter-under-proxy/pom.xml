@@ -69,6 +69,13 @@
                         <test.duration>${test.duration}</test.duration>
                         <target.rpm>${target.rpm}</target.rpm>
                     </propertiesUser>
+                    <proxyConfig>
+                        <host>96.246.184.18</host>
+                        <port>9128</port>
+                        <!--<username>user_name</username>
+                        <password>password_of_proxy</password>
+                        <hostExclusions>localhost|*.shantonu.com</hostExclusions>-->
+                    </proxyConfig>
                 </configuration>
             </plugin>
         </plugins>
