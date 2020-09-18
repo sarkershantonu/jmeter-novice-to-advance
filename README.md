@@ -14,8 +14,22 @@ Jmeter from Basic to advance
  - plugins 
  
  # My experience 
- development 
- architecture 
+- Testing
+- Plugin development 
+- Customizing Component
+- Jmeter architecture 
+
+# Testing Experiences
+- 100k CCU
+- 10GBps
+- WebSocket
+- REST
+- XML/RPC
+- JMS
+- Kafka
+- Xmpp/Chat
+- CI/CD with APM
+- Grafana/InfluxDB
  
 # Utilities
 - JMX creator 
