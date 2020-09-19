@@ -46,12 +46,7 @@
                         <goal>jmeter</goal>
                     </goals>
                 </execution>
-                <execution>
-                    <id>check-results</id>
-                    <goals>
-                        <goal>results</goal>
-                    </goals>
-                </execution>
+
             </executions>
             <configuration>
                 <propertiesUser>
@@ -70,7 +65,7 @@
                 </propertiesUser>
                 <remoteConfig>
                     <startServersBeforeTests>true</startServersBeforeTests>
-                    <serverList>192.168.4.6</serverList>
+                   <!-- <serverList>192.168.4.6</serverList>-->
                     <stopServersAfterTests>true</stopServersAfterTests>
                 </remoteConfig>
             </configuration>
