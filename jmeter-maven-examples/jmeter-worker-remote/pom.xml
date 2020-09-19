@@ -8,6 +8,7 @@
 <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <hostname>192.168.4.5</hostname>
         <BUILD_TAG>${project.version}</BUILD_TAG>
         <jmeter.plugin.version>3.1.0</jmeter.plugin.version>
         <encoding>UTF-8</encoding>
@@ -32,8 +33,15 @@
                     <goals>
                         <goal>remote-server</goal>
                     </goals>
+                    <configuration>
+                        <runInBackground>false</runInBackground>
+                    </configuration>
                 </execution>
             </executions>
+            <configuration>
+                <exportedRmiHostname>${hostname}</exportedRmiHostname>
+                <serverPort>1099</serverPort>
+            </configuration>
         </plugin>
     </plugins></build>
 </project>
