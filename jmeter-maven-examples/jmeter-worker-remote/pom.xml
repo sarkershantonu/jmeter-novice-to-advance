@@ -41,19 +41,14 @@
                     </goals>
                 </execution>
                 <execution>
-                    <id>tests</id>
+                    <id>start-jmeter-server</id>
                     <goals>
-                        <goal>jmeter</goal>
-                    </goals>
-                </execution>
-                <execution>
-                    <id>check-results</id>
-                    <goals>
-                        <goal>results</goal>
+                        <goal>remote-server</goal>
                     </goals>
                 </execution>
             </executions>
             <configuration>
+                <runInBackground>false</runInBackground>
                 <propertiesUser>
                     <base.url>${base.url}</base.url>
                     <jobs.url>${jobs.url}</jobs.url>
