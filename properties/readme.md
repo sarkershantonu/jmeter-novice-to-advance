@@ -8,3 +8,8 @@ server.rmi.ssl.disable=true
 ```
 httpsampler.ignore_failed_embedded_resources=true
 ```
+
+### Webdriver sampler 
+```
+webdriver.sampleresult_class=com.googlecode.jmeter.plugins.webdriver.sampler.SampleResultWithSubs
+```
