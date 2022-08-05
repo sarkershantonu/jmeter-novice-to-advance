@@ -3,5 +3,5 @@ package org.automation.jmeter.core;
 /**
  * @author Shantonu Sarker on 5/26/2022
  */
-public class BaseTestNg extends TestBase{
+public class TestNgPerformanceTest extends TestBase {
 }
