@@ -21,4 +21,5 @@ public class ThreadGroupExample extends Junit4PerformanceTest {
 
         Assert.assertTrue("Should be less than 5s",(report.overall().sampleTimePercentile99().getSeconds())<=5L);
     }
+
 }
