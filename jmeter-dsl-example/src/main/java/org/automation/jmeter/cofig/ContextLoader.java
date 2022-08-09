@@ -35,7 +35,7 @@ public class ContextLoader {
         return load(this.fileName);
     }
 
-    public Properties load(final String filePath) throws IOException {
+    private Properties load(final String filePath) throws IOException {
         Properties properties = new Properties();
         InputStream is = getClass().getClassLoader().getResourceAsStream(filePath);
         properties.load(is);
