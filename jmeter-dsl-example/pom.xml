@@ -35,12 +35,6 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>us.abstracta.jmeter</groupId>
             <artifactId>jmeter-java-dsl</artifactId>
             <version>0.64</version>
