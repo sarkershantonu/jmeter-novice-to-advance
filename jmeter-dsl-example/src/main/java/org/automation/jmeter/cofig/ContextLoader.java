@@ -34,7 +34,7 @@ public class ContextLoader {
     public Properties load() throws IOException {
         return load(this.fileName);
     }
-    public Properties loadInFolder(final String folderName) throws IOException {
+    public Properties loadFromFolder(final String folderName) throws IOException {
         return load(folderName+FILE_SEPARATOR+this.fileName);
     }
 
