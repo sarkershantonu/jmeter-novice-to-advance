@@ -20,7 +20,7 @@ public abstract class BaseVerifier {
 
     public final Properties load() {
         try {
-            return new ContextLoader(this.data).loadInFolder("test-data");
+            return new ContextLoader(this.data).loadFromFolder("test-data");
         } catch (IOException e) {
             throw new TestDataLoadingException("failed to load data file from " + this.data, e);
         }
