@@ -1,6 +1,7 @@
 package org.automation.jmeter.steps;
 
 import org.junit.Assert;
+import us.abstracta.jmeter.javadsl.core.DslTestPlan;
 import us.abstracta.jmeter.javadsl.core.TestPlanStats;
 
 import java.io.IOException;
@@ -30,5 +31,12 @@ public class DefaultThreadGroupExample {
 
         Assert.assertTrue("Should be less than 5s",(report.overall().sampleTimePercentile99().getSeconds())<=5L);
 
+    }
+    public DslTestPlan getTestPlan(){
+        return testPlan(
+                threadGroup(thread.getProperty("comments"),
+                        Integer.valueOf(thread.getProperty("comments")),
+                        Integer.valueOf(thread.getProperty("comments")),
+                        httpSampler(http.getProperty("BASE_UIRL"))));
     }
 }
