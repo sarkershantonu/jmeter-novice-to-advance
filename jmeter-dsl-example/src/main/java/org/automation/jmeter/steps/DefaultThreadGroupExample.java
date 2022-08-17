@@ -22,9 +22,9 @@ public class DefaultThreadGroupExample {
     //todo
     public void runWithProperties(Properties properties) throws IOException {
         TestPlanStats report = testPlan(
-                threadGroup(properties.getProperty("comments"),
-                        Integer.valueOf(properties.getProperty("comments")),
-                        Integer.valueOf(properties.getProperty("comments")),
+                threadGroup(properties.getProperty("name"),
+                        Integer.valueOf(properties.getProperty("thread")),
+                        Integer.valueOf(properties.getProperty("rampup")),
                         httpSampler("https://bratahome.duckdns.org")))
                 .run();
         //Assert.assertTrue("fails : Should be less than 5s",(report.overall().sampleTimePercentile99().getSeconds())>=5L);
@@ -34,9 +34,9 @@ public class DefaultThreadGroupExample {
     }
     public DslTestPlan getTestPlan(){
         return testPlan(
-                threadGroup(thread.getProperty("comments"),
-                        Integer.valueOf(thread.getProperty("comments")),
-                        Integer.valueOf(thread.getProperty("comments")),
+                threadGroup(thread.getProperty("name"),
+                        Integer.valueOf(thread.getProperty("thread")),
+                        Integer.valueOf(thread.getProperty("rampup")),
                         httpSampler(http.getProperty("BASE_UIRL"))));
     }
 }
