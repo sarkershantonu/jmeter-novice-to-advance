@@ -10,6 +10,11 @@ import static us.abstracta.jmeter.javadsl.JmeterDsl.*;
 
 public class DefaultThreadGroupExample {
 
+
+    public DefaultThreadGroupExample(Properties threadGroupData, Properties httpData) {
+
+    }
+
     //todo
     public void runWithProperties(Properties properties) throws IOException {
         TestPlanStats report = testPlan(
