@@ -1,4 +1,4 @@
-package org.automation.jmeter.steps;
+package org.automation.jmeter.plans;
 
 import org.junit.Assert;
 import us.abstracta.jmeter.javadsl.core.DslTestPlan;

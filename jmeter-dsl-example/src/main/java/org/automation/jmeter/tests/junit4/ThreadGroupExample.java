@@ -2,7 +2,7 @@ package org.automation.jmeter.tests.junit4;
 
 import org.automation.jmeter.cofig.ContextLoader;
 import org.automation.jmeter.core.Junit4PerformancePerformanceTest;
-import org.automation.jmeter.steps.DefaultThreadGroupExample;
+import org.automation.jmeter.plans.DefaultThreadGroupExample;
 import org.junit.Assert;
 import org.junit.Test;
 import us.abstracta.jmeter.javadsl.core.TestPlanStats;
