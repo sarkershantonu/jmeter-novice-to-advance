@@ -10,9 +10,12 @@ import static us.abstracta.jmeter.javadsl.JmeterDsl.*;
 
 public class DefaultThreadGroupExample {
 
+    private Properties thread;
+    private Properties http;
 
     public DefaultThreadGroupExample(Properties threadGroupData, Properties httpData) {
-
+        this.thread=threadGroupData;
+        this.http= httpData;
     }
 
     //todo
