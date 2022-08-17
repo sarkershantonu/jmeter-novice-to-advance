@@ -1,6 +1,8 @@
 package org.automation.jmeter.tests.junit4;
 
+import org.automation.jmeter.cofig.ContextLoader;
 import org.automation.jmeter.core.Junit4PerformancePerformanceTest;
+import org.automation.jmeter.steps.DefaultThreadGroupExample;
 import org.junit.Assert;
 import org.junit.Test;
 import us.abstracta.jmeter.javadsl.core.TestPlanStats;
@@ -22,4 +24,13 @@ public class ThreadGroupExample extends Junit4PerformancePerformanceTest {
         Assert.assertTrue("Should be less than 5s",(report.overall().sampleTimePercentile99().getSeconds())<=5L);
     }
 
+    @Test
+    public void testThreadGroup2() throws IOException {
+        TestPlanStats report = new DefaultThreadGroupExample(
+                new ContextLoader("threadgroup.ini").loadFromFolder("test-data"),
+                new  ContextLoader("http.ini").loadFromFolder("test-data"))
+                .getTestPlan().run();
+        Assert.assertTrue("Should be less than 5s",(report.overall().sampleTimePercentile99().getSeconds())<=5L);
+
+    }
 }
