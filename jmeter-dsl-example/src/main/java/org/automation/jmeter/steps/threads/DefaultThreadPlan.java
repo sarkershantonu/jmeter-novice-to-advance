@@ -28,7 +28,7 @@ public class DefaultThreadPlan {
     }
 
     private DslTestPlan getPlan(final String name, final int threads, final int rampup, final int loop, final Properties http){
-
+        return testPlan(threadGroup(name, threads, rampup, httpSampler(http.getProperty("BASE_UIRL"))));
     }
     private DslTestPlan getPlan(final String name, final int threads, final int rampup, final int duration, final int startupDelay, final Properties http){
 
