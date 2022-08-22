@@ -8,8 +8,8 @@ import java.time.Duration;
 import static us.abstracta.jmeter.javadsl.JmeterDsl.threadGroup;
 
 public class JmeterThreads {
-    private final String name; 
-     
+    private final String name;
+
     public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, int loopCount, BaseThreadGroup.ThreadGroupChild... children) {
         return threadGroup(this.name, threads, loopCount, children).holdFor(rampup);
     }
@@ -17,10 +17,18 @@ public class JmeterThreads {
     public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, Duration duration, BaseThreadGroup.ThreadGroupChild... children) {
         return threadGroup(this.name, threads, duration, children).holdFor(rampup);
     }
+    public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, Duration duration,Duration startupDelay, BaseThreadGroup.ThreadGroupChild... children) {
+        return threadGroup(this.name, threads, duration, children).holdFor(rampup);
+    }
 
     // SteppingThreadGroup like threads
     public DslDefaultThreadGroup getSteppingThreadGroup(int maxThread,
-            int startThread, Duration rampup, Duration holdThread, BaseThreadGroup.ThreadGroupChild... children) {
+                                                        Duration startupDelay,
+                                                        int startThread,
+                                                        int threadIncrease,
+                                                        Duration inEvery,
+                                                        Duration threadRampup,
+                                                        Duration holdThread, BaseThreadGroup.ThreadGroupChild... children) {
         /***
          *   * <pre>{@code
          *    *  threadGroup()
@@ -33,11 +41,11 @@ public class JmeterThreads {
          */
         return null;
     }
-    
+
     public JmeterThreads(String name, String name1) {
 
         this.name = name1;
     }
-    
-    
+
+
 }
