@@ -42,9 +42,11 @@ public class JmeterThreads {
         return null;
     }
 
-    public JmeterThreads(String name, String name1) {
 
-        this.name = name1;
+    public DslDefaultThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config){ return null;}
+    public JmeterThreads(String threadName) {
+
+        this.name = threadName;
     }
 
 
