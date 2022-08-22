@@ -2,7 +2,7 @@ package org.automation.jmeter.tests.junit4;
 
 import org.automation.jmeter.cofig.ContextLoader;
 import org.automation.jmeter.core.Junit4PerformancePerformanceTest;
-import org.automation.jmeter.steps.threads.DefaultThreadPlan;
+import org.automation.jmeter.steps.JmeterTestPlan;
 import org.junit.Assert;
 import org.junit.Test;
 import us.abstracta.jmeter.javadsl.core.TestPlanStats;
@@ -26,7 +26,7 @@ public class ThreadGroupExample extends Junit4PerformancePerformanceTest {
 
     @Test
     public void testThreadGroup2() throws IOException {
-        TestPlanStats report = new DefaultThreadPlan(
+        TestPlanStats report = new JmeterTestPlan(
                 new ContextLoader("threadgroup.ini").loadFromFolder("test-data"),
                 new  ContextLoader("http.ini").loadFromFolder("test-data"))
                 .getPlanWithIteration().run();
