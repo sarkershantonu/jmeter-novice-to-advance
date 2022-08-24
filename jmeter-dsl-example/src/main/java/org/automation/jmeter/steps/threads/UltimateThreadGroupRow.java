@@ -39,7 +39,7 @@ public class UltimateThreadGroupRow {
         return shoutDownIn;
     }
 
-   /* public Stage getStage(){
-        return new Stage(getThread(), getHoldFor(), )
-    }*/
+    public Stage getStage(){
+        return new Stage(getThread(), getHoldFor(), null);
+    }
 }
