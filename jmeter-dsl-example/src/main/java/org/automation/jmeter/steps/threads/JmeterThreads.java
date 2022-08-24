@@ -17,7 +17,8 @@ public class JmeterThreads {
     public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, Duration duration, BaseThreadGroup.ThreadGroupChild... children) {
         return threadGroup(this.name, threads, duration, children).holdFor(rampup);
     }
-    public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, Duration duration,Duration startupDelay, BaseThreadGroup.ThreadGroupChild... children) {
+
+    public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, Duration duration, Duration startupDelay, BaseThreadGroup.ThreadGroupChild... children) {
         return threadGroup(this.name, threads, duration, children).holdFor(rampup);
     }
 
@@ -39,11 +40,19 @@ public class JmeterThreads {
          *    *    .children(...)
          *    * }
          */
+
         return null;
     }
 
 
-    public DslDefaultThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config){ return null;}
+    public DslDefaultThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config) {
+        for(UltimateThreadGroupRow arow : config){
+
+        }
+
+        return null;
+    }
+
     public JmeterThreads(String threadName) {
 
         this.name = threadName;
