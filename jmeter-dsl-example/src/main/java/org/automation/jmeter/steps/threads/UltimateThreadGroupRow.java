@@ -9,12 +9,12 @@ public class UltimateThreadGroupRow {
     private Duration holdFor;
     private Duration shoutDownIn;
 
-    public UltimateThreadGroupRow(int startThread, Duration initDelay, Duration rampup, Duration holdFor, Duration shoutDownIn) {
+    public UltimateThreadGroupRow(int startThread, Duration initDelay, Duration rampup, Duration hold, Duration shutdown) {
         this.startThread = startThread;
         this.initDelay = initDelay;
         this.rampup = rampup;
-        this.holdFor = holdFor;
-        this.shoutDownIn = shoutDownIn;
+        this.holdFor = hold;
+        this.shoutDownIn = shutdown;
     }
 
     public int getStartThread() {
