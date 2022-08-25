@@ -1,4 +1,4 @@
-package org.automation.jmeter.steps;
+package org.automation.jmeter.jmxutils;
 
 import org.automation.jmeter.cofig.JavaProperties;
 import us.abstracta.jmeter.javadsl.core.DslTestPlan;
