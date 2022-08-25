@@ -5,10 +5,10 @@ import us.abstracta.jmeter.javadsl.core.TestPlanStats;
 
 import java.io.IOException;
 
-public class RunJmx {
+public class JmxRunner {
     private final String jmxFilePath;
 
-    public RunJmx(String jmxFilePath) {
+    public JmxRunner(String jmxFilePath) {
         this.jmxFilePath = jmxFilePath;
     }
     public TestPlanStats run() throws IOException {
