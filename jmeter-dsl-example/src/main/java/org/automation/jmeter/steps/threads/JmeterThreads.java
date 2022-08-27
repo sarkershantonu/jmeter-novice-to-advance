@@ -22,6 +22,18 @@ public class JmeterThreads {
         return threadGroup(this.name, threads, duration, children).holdFor(rampup);
     }
 
+    /***
+     * Stepping thread from Jmeter Plugins
+     * @param maxThread
+     * @param startupDelay
+     * @param startThread
+     * @param threadIncrease
+     * @param inEvery
+     * @param threadRampup
+     * @param holdThread
+     * @param children
+     * @return
+     */
     // SteppingThreadGroup like threads
     public DslDefaultThreadGroup getSteppingThreadGroup(int maxThread,
                                                         Duration startupDelay,
