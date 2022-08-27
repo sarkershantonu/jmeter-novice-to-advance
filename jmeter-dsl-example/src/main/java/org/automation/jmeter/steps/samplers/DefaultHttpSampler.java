@@ -1,16 +1,16 @@
 package org.automation.jmeter.steps.samplers;
 
-import org.automation.jmeter.steps.JmeterComponent;
+import org.automation.jmeter.steps.JmeterElementBase;
 import us.abstracta.jmeter.javadsl.http.DslHttpSampler;
 
 import java.util.Properties;
 
 import static us.abstracta.jmeter.javadsl.JmeterDsl.httpSampler;
 
-public class DefaultHttpSampler extends JmeterComponent {
+public class DefaultHttpSampler extends JmeterElementBase {
 
     public DefaultHttpSampler(Properties data) {
-        super(data);
+        super(name, comments, data);
     }
 
     public DslHttpSampler get(){
