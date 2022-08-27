@@ -1,9 +1,14 @@
 package org.automation.jmeter.steps.threads;
 
+import kg.apc.jmeter.threads.UltimateThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.BaseThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.DslDefaultThreadGroup;
+import us.abstracta.jmeter.javadsl.core.threadgroups.defaultthreadgroup.Stage;
+import us.abstracta.jmeter.javadsl.core.threadgroups.defaultthreadgroup.UltimateThreadGroupHelper;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 import static us.abstracta.jmeter.javadsl.JmeterDsl.threadGroup;
 
@@ -59,10 +64,11 @@ public class JmeterThreads {
 
 
     public DslDefaultThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config) {
-        for(UltimateThreadGroupRow arow : config){
-
+        List<Stage> stages = new ArrayList<>();
+        for(UltimateThreadGroupRow aRow : config){
+            stages.add(aRow.getStage());
         }
-
+        new UltimateThreadGroupHelper(stages);
         return null;
     }
 
