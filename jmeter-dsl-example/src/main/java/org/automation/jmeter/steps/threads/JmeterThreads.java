@@ -1,6 +1,5 @@
 package org.automation.jmeter.steps.threads;
 
-import kg.apc.jmeter.threads.UltimateThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.BaseThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.DslDefaultThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.defaultthreadgroup.Stage;
@@ -25,6 +24,10 @@ public class JmeterThreads {
 
     public DslDefaultThreadGroup getDefaultThread(int threads, Duration rampup, Duration duration, Duration startupDelay, BaseThreadGroup.ThreadGroupChild... children) {
         return threadGroup(this.name, threads, duration, children).holdFor(rampup);
+    }
+
+    public DslDefaultThreadGroup getDefaultThread(final String name, final int threads, final Duration rampup, final int iteration, BaseThreadGroup.ThreadGroupChild... children){
+        return threadGroup(name, threads, iteration,children).rampTo(threads,rampup);
     }
 
     /***

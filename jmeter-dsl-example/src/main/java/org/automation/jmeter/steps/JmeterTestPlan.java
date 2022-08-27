@@ -40,8 +40,6 @@ public class JmeterTestPlan {
         return testPlan(threadGroup(name, threads, duration, new DefaultHttpSampler(http).get()).rampTo(threads,rampup));
     }
 
-    public DslDefaultThreadGroup getDefaultThread(final String name, final int threads, final Duration rampup, final int iteration, BaseThreadGroup.ThreadGroupChild... children){
-        return threadGroup(name, threads, iteration,children).rampTo(threads,rampup);
-    }
+
 
 }
