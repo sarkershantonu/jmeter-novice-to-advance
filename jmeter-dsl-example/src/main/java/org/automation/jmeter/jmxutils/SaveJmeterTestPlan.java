@@ -5,14 +5,14 @@ import us.abstracta.jmeter.javadsl.core.DslTestPlan;
 
 import java.io.IOException;
 
-public class TestPlanCreator {
+public class SaveJmeterTestPlan {
     private final DslTestPlan testPlan;
 
-    public TestPlanCreator(final DslTestPlan testPlan) {
+    public SaveJmeterTestPlan(final DslTestPlan testPlan) {
         this.testPlan = testPlan;
     }
 
-    public void saveTestPlan(final String name) {
+    public void asJmx(final String name) {
         try {
             testPlan.saveAsJmx("JMX" + JavaProperties.FILE_SEPARATOR + name + ".jmx");
         } catch (IOException e) {
