@@ -38,9 +38,7 @@ public class JmeterTestPlan {
     }
     private DslTestPlan getPlan(final String name, final int threads, final Duration rampup, final Duration duration, final int startupDelay, final Properties http){
         return testPlan(threadGroup(name, threads, duration,
-                new DefaultHttpSampler(
-                        http.getProperty("name"),
-                        http.getProperty("comments"),http).get()).rampTo(threads,rampup));
+                new DefaultHttpSampler(http).get()).rampTo(threads,rampup));
     }
 
 
