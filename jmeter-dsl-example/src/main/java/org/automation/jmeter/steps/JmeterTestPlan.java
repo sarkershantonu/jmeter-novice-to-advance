@@ -2,8 +2,6 @@ package org.automation.jmeter.steps;
 
 import org.automation.jmeter.steps.samplers.DefaultHttpSampler;
 import us.abstracta.jmeter.javadsl.core.DslTestPlan;
-import us.abstracta.jmeter.javadsl.core.threadgroups.BaseThreadGroup;
-import us.abstracta.jmeter.javadsl.core.threadgroups.DslDefaultThreadGroup;
 
 import java.time.Duration;
 import java.util.Properties;
