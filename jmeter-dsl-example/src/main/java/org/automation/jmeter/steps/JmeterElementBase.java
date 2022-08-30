@@ -20,10 +20,10 @@ public abstract class JmeterElementBase {
         return data;
     }
 
-    public JmeterElementBase(String name, String comments, Properties data) {
-        this.name = name;
-        this.comments = comments;
+    public JmeterElementBase(Properties data) {
         this.data = data;
+        this.comments = data.getProperty("name");
+        this.name =  data.getProperty("comments");
     }
     
 }
