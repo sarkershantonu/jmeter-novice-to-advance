@@ -9,8 +9,8 @@ import static us.abstracta.jmeter.javadsl.JmeterDsl.httpSampler;
 
 public class DefaultHttpSampler extends JmeterElementBase {
 
-    public DefaultHttpSampler(String name, String comments, Properties data) {
-        super(name, comments, data);
+    public DefaultHttpSampler(Properties data) {
+        super( data);
     }
 
     public DslHttpSampler get(){
