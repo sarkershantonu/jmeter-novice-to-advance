@@ -1,4 +1,4 @@
-package org.automation.jmeter.dsl;
+package org.automation.jmeter.dsl.threadgroups;
 
 import org.apache.jmeter.gui.JMeterGUIComponent;
 import org.apache.jmeter.threads.AbstractThreadGroup;
