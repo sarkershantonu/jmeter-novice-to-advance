@@ -1,4 +1,4 @@
-package org.automation.jmeter.steps.threads;
+package org.automation.jmeter.dsl.model;
 
 import us.abstracta.jmeter.javadsl.core.threadgroups.defaultthreadgroup.Stage;
 
