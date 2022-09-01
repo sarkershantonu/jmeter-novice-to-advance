@@ -69,7 +69,7 @@ public class JmeterThreads {
     }
 
 
-    public AbstractThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config) {
+    public DslDefaultThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config) {
         List<Stage> stages = new ArrayList<>();
         for(UltimateThreadGroupRow aRow : config){
             stages.add(aRow.getStage());
