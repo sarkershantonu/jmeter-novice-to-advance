@@ -68,13 +68,13 @@ public class JmeterThreads {
         return null;
     }
 
-
+//todo
     public DslDefaultThreadGroup getUltimateThreadGroup(UltimateThreadGroupRow... config) {
         List<Stage> stages = new ArrayList<>();
         for(UltimateThreadGroupRow aRow : config){
             stages.add(aRow.getStage());
         }
-        return new UltimateThreadGroupHelper(stages).buildThreadGroup();
+        return null;// new DslDefaultThreadGroup(this.name,new UltimateThreadGroupHelper(stages).buildThreadGroup());
     }
 
     public JmeterThreads(String threadName) {
