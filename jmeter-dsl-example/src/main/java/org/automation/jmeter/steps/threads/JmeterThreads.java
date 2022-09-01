@@ -1,17 +1,14 @@
 package org.automation.jmeter.steps.threads;
 
-import org.apache.jmeter.threads.AbstractThreadGroup;
-import us.abstracta.jmeter.javadsl.core.DslTestPlan;
+import org.automation.jmeter.dsl.model.UltimateThreadGroupRow;
 import us.abstracta.jmeter.javadsl.core.threadgroups.BaseThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.DslDefaultThreadGroup;
 import us.abstracta.jmeter.javadsl.core.threadgroups.defaultthreadgroup.Stage;
-import us.abstracta.jmeter.javadsl.core.threadgroups.defaultthreadgroup.UltimateThreadGroupHelper;
 
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-import static us.abstracta.jmeter.javadsl.JmeterDsl.testPlan;
 import static us.abstracta.jmeter.javadsl.JmeterDsl.threadGroup;
 
 public class JmeterThreads {
