@@ -15,4 +15,8 @@ public class DslSteppingThreadGroup extends BaseThreadGroup<DslSteppingThreadGro
     protected AbstractThreadGroup buildThreadGroup() {
         return null;
     }
+
+    public DslSteppingThreadGroup saveLoadPlanAsImage(final String imageName){
+        return this;
+    }
 }
