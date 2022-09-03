@@ -32,7 +32,7 @@ public class JmeterThreads {
 
     /***
      * Stepping thread from Jmeter Plugins
-     * @param maxThread
+     * @param threads
      * @param startupDelay
      * @param startThread
      * @param threadIncrease
@@ -43,7 +43,7 @@ public class JmeterThreads {
      * @return
      */
     // SteppingThreadGroup like threads
-    public DslDefaultThreadGroup getSteppingThreadGroup(int maxThread,
+    public DslDefaultThreadGroup getSteppingThreadGroup(int threads,
                                                         Duration startupDelay,
                                                         int startThread,
                                                         int threadIncrease,
@@ -61,6 +61,7 @@ public class JmeterThreads {
          *    * }
          */
 
+       //todo , smplification of thread model
 
         return null;
     }
