@@ -11,4 +11,5 @@ public class JmeterRegex extends JmeterElementBase {
     public JmeterRegex(Properties data) {
         super(data);
     }
+
 }
