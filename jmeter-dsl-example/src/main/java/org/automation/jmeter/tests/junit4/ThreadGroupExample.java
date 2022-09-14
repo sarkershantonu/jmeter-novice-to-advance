@@ -1,7 +1,6 @@
 package org.automation.jmeter.tests.junit4;
 
 import org.automation.jmeter.cofig.ContextLoader;
-import org.automation.jmeter.core.Junit4PerformancePerformanceTest;
 import org.automation.jmeter.steps.JmeterTestPlan;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,7 +10,7 @@ import java.io.IOException;
 
 import static us.abstracta.jmeter.javadsl.JmeterDsl.*;
 
-public class ThreadGroupExample extends Junit4PerformancePerformanceTest {
+public class ThreadGroupExample {
 
     @Test
     public void testThreadGroup() throws IOException {
