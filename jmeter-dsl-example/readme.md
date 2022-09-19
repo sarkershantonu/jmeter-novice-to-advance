@@ -6,3 +6,7 @@ Step 3:  going through each page and collect all job link  from a page
 
 
 ThreadGroupChild : is a jmeter test element representation should be a child of Tread Group 
+
+### Examples for 
+- Ultimate Thread Group
+- Stepping thread Group
