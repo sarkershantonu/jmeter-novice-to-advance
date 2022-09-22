@@ -14,4 +14,9 @@ public class LoadScripts {
                         httpSampler("https://bratahome.duckdns.org")));
 
     }
+    //todo
+    public static DslTestPlan UltimateThreadGroupExample(){
+
+        return null;
+    }
 }
