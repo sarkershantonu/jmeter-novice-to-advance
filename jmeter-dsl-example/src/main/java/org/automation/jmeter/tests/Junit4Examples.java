@@ -1,4 +1,4 @@
-package org.automation.jmeter.tests.junit4;
+package org.automation.jmeter.tests;
 
 import org.automation.jmeter.cofig.ContextLoader;
 import org.automation.jmeter.steps.JmeterTestPlan;
@@ -10,7 +10,7 @@ import java.io.IOException;
 
 import static us.abstracta.jmeter.javadsl.JmeterDsl.*;
 
-public class ThreadGroupExample {
+public class Junit4Examples {
 
     @Test
     public void testThreadGroup() throws IOException {
