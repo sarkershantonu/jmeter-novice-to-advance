@@ -20,5 +20,8 @@ public class LoadScripts {
         return null;
     }
 
-    public static DslTestPlan regularExpressionExtractorExample(){}
+    public static DslTestPlan regularExpressionExtractorExample(){
+
+        return null;
+    }
 }
