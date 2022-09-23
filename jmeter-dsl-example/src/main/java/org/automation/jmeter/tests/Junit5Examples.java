@@ -1,4 +1,4 @@
-package org.automation.jmeter.tests.junit5;
+package org.automation.jmeter.tests;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import static us.abstracta.jmeter.javadsl.JmeterDsl.*;
 
-public class ThreadGroupExample  {
+public class Junit5Examples {
     @Test
     public void testThreadGroup() throws IOException {
         TestPlanStats report = testPlan(
