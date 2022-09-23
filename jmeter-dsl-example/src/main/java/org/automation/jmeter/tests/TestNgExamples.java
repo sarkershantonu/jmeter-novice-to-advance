@@ -1,4 +1,4 @@
-package org.automation.jmeter.tests.testng;
+package org.automation.jmeter.tests;
 
 
 import org.automation.jmeter.tests.scripts.LoadScripts;
@@ -8,7 +8,7 @@ import us.abstracta.jmeter.javadsl.core.TestPlanStats;
 
 import java.io.IOException;
 
-public class ThreadGroupExample {
+public class TestNgExamples {
 
     @Test
     public void testForThreadGroup() throws IOException {
